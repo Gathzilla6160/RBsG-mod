@@ -1,0 +1,9 @@
+{
+    "id": "RBsG",
+    "name": "RBsG",
+    "author": ["Gathzilla"],
+    "description": "random bullshit go",
+    "prefix": "rbsg",
+    "main_file": "main.lua",
+    "version": "0.1.0"
+}
