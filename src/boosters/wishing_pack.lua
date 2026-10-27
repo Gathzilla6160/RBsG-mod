@@ -1,10 +1,10 @@
 SMODS.Booster {
     key = 'wishing_pack',
+    atlas = 'booster_packs',
     weight = 1,
     kind = 'rbsg_boosters',
     group_key = 'k_rbsg_boosters',
     cost = 15,
-    atlas = 'booster_packs',
     pos = { x = 0, y = 0 },
     draw_hand = false,
 
@@ -34,7 +34,6 @@ SMODS.Booster {
             G.GAME.wishing_pack_opens = (G.GAME.wishing_pack_opens or 0) + 1
         end
         local this_open = G.GAME.wishing_pack_opens or 1
-
 
         if i <= 9 then
             return { set = 'Joker', rarity = 0, area = G.pack_cards, skip_materialize = true, soulable = true, key_append = 'rbsg_wish' }

@@ -33,7 +33,7 @@ SMODS.Joker {
         end
 
         -- Fires once, when this Joker is bought
-        if context.buying_card == card then
+        if context.buying_card and context.card == card then
             local pool = {}
             for _, c in ipairs(G.playing_cards) do
                 if not c.ability.enhancement or c.ability.enhancement.key ~= 'frostbite' then

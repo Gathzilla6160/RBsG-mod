@@ -16,7 +16,7 @@ end
 SMODS.Joker {
     key = 'a_girl_has_no_name',
     atlas = 'jokers_uncommon',
-    pos = { x = 0, y = 1 }, -- placeholder, change to your sprite's position
+    pos = { x = 0, y = 1 },
     rarity = 2,
     cost = 5,
     blueprint_compat = true,
@@ -40,8 +40,7 @@ SMODS.Joker {
             return
         end
 
-        -- Fires once per round, right as the first scoring card of the
-        -- first hand is about to be scored
+        -- Fires once per round, right as the first scoring card of the first hand is about to be scored
         if context.individual
             and context.cardarea == G.play
             and not context.blueprint

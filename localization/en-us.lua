@@ -109,6 +109,14 @@ return {
                     "of the last scored card",
                 },
             },
+            j_rbsg_sawdust_meal = {
+                name =  'Sawdust Meal',
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult",
+                    "{C:green}#3# in #4#{} chance for",
+                    "{C:red}-#2# Mult",
+                },
+            },
         },
         Enhanced = {
             m_rbsg_valyrian_steel = {
@@ -162,12 +170,11 @@ return {
                 }
             }
         },
-        Booster = {
+        Other = {
             p_rbsg_wishing_pack = {
                 name = 'Wishing Pack',
                 text = {
-                    "Choose {C:attention}#2#{} of",
-                    "{C:attention}#1#{} Jokers",
+                    "Choose {C:attention}#1#{} of {C:attention}#2#{} Jokers",
                     "9 random {C:attention}Common{}, 1 {C:attention}Rare{}",
                     "Your 9th pack contains a ?"
                 }
