@@ -2,8 +2,8 @@
     "id": "RBsG",
     "name": "RBsG",
     "author": ["Gathzilla"],
-    "description": "random bullshit go",
+    "description": "random bullsh!t go",
     "prefix": "rbsg",
     "main_file": "main.lua",
-    "version": "0.1.0"
+    "version": "0.1.1a"
 }
