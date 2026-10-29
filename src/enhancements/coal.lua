@@ -6,9 +6,10 @@ SMODS.Enhancement {
     no_rank = true,
     no_suit = true,
     always_scores = true,
+    replace_base_card = true,
 
     config = {
-        mult = 15,
+        mult = 10,
     },
 
     loc_vars = function(self, info_queue, card)

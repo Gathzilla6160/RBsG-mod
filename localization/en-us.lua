@@ -33,14 +33,6 @@ return {
                     "{C:attention}#1#{} additional time"
                 },
             },
-            j_rbsg_the_generator = {
-                name = 'The Generator',
-                text = {
-                    "Gains {X:mult,C:white}X#1#{} Mult when",
-                    "score catches {C:attention}on fire{}",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
-                },
-            },
             j_rbsg_direwolf_mother = {
                 name = 'Direwolf Mother',
                 text = {
@@ -109,12 +101,30 @@ return {
                     "of the last scored card",
                 },
             },
+            j_rbsg_the_generator = {
+                name = 'The Generator',
+                text = {
+                    "Destroy played {C:attention}Coal Card{}",
+                    "gain {X:mult,C:white}X#3#{} Mult per Coal card.",
+                    "Gains {X:mult,C:white}X#1#{} Mult when",
+                    "score catches {C:attention}on fire{}",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
+                },
+            },
             j_rbsg_sawdust_meal = {
                 name =  'Sawdust Meal',
                 text = {
                     "{X:mult,C:white}X#1#{} Mult",
                     "{C:green}#3# in #4#{} chance for",
                     "{C:red}-#2# Mult",
+                },
+            },
+            j_rbsg_coal_mine = {
+                name = 'Coal Mine',
+                text = {
+                    "Once per {C:attention}ante{}, after handplay,",
+                    "turn {C:attention}1{} random unscored card",
+                    "into a {C:attention}Coal Card{}",
                 },
             },
         },
@@ -150,7 +160,7 @@ return {
                     "Always scores",
                     "No rank or suit",
                 }
-            }
+            }   
         },
         Spectral = {
             c_rbsg_the_forge = {
@@ -178,7 +188,7 @@ return {
                     "9 random {C:attention}Common{}, 1 {C:attention}Rare{}",
                     "Your 9th pack contains a ?"
                 }
-            },
-        },
+            }
+        }
     }
 }
