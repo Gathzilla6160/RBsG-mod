@@ -36,6 +36,13 @@ SMODS.Atlas {
 }
 
 SMODS.Atlas {
+    key = 'tarots',
+    path = 'tarots.png',
+    px = 71,
+    py = 95
+}
+
+SMODS.Atlas {
     key = 'booster_packs',
     path = 'booster_packs.png',
     px = 71,
@@ -45,22 +52,7 @@ SMODS.Atlas {
 
 --#region File Loading
 
-    local jokers_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/jokers")
-for _, file in ipairs(jokers_src) do
-    assert(SMODS.load_file("src/jokers/" .. file))()
-end
-
-    local consumables_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/consumables")
-for _, file in ipairs(consumables_src) do
-    assert(SMODS.load_file("src/consumables/" .. file))()
-end
-
-    local enhancements_src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/enhancements")
-for _, file in ipairs(enhancements_src) do
-    assert(SMODS.load_file("src/enhancements/" .. file))()
-end
-
-for _, folder in ipairs({ "enhancements", "jokers", "consumables", "boosters" }) do
+for _, folder in ipairs({ "enhancements", "jokers", "consumables", "boosters", "editions" }) do
     local src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/" .. folder)
     for _, file in ipairs(src) do
         if file:match("%.lua$") then
