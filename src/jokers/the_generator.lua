@@ -12,7 +12,6 @@ SMODS.Joker {
         extra = {
             xmult = 1,
             xmult_gain = 0.1,
-            coal_xmult_gain = 0.1
         },
     },
 
@@ -21,7 +20,6 @@ SMODS.Joker {
             vars = {
                 card.ability.extra.xmult_gain,
                 card.ability.extra.xmult,
-                card.ability.extra.coal_xmult_gain,
             },
         }
     end,
@@ -35,36 +33,6 @@ SMODS.Joker {
         end
 
         if context.after and not context.blueprint then
-            -- Destroy every Coal card in the played hand, gain XMult per card
-            local coal = {}
-            for _, c in ipairs(context.full_hand or {}) do
-                if SMODS.has_enhancement(c, 'm_rbsg_coal') then
-                    coal[#coal + 1] = c
-                end
-            end
-
-            if #coal > 0 then
-                for _, c in ipairs(coal) do
-                    for i = #G.playing_cards, 1, -1 do
-                        if G.playing_cards[i] == c then
-                            table.remove(G.playing_cards, i)
-                        end
-                    end
-                    c:start_dissolve()
-                end
-                card.ability.extra.xmult = card.ability.extra.xmult
-                    + card.ability.extra.coal_xmult_gain * #coal
-                return {
-                    message = localize {
-                        type = 'variable',
-                        key = 'a_xmult',
-                        vars = { card.ability.extra.xmult },
-                    },
-                    colour = G.C.MULT,
-                }
-            end
-
-            -- Otherwise: did the score catch on fire this hand?
             local required = G.GAME.blind and G.GAME.blind.chips or 0
             local earned = G.GAME.chips + (hand_chips or 0) * (mult or 0)
             if required > 0 and G.GAME.chips < required and earned >= required then
