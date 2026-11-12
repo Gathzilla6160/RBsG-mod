@@ -63,7 +63,7 @@ SMODS.Joker {
                             first_c:set_base(new_base)
                             first_c:juice_up(0.5, 0.5)
                             return {
-                                message = 'No Name!',
+                                message = 'Valar Morghulis!',
                                 colour = G.C.PURPLE,
                             }
                         end
