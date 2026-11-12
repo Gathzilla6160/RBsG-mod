@@ -29,7 +29,7 @@ SMODS.Joker {
             right:set_edition(edition, true, true)
 
             return {
-                message = 'Surgery!',
+                message = 'I am a Surgeon!', 'I Am A Surgeon, Dr. Han!',
                 colour = G.C.GREEN,
             }
         end

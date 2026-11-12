@@ -49,7 +49,9 @@ return {
                 },
             },
             j_rbsg_the_man = {
-                name = 'The man who passes the sentence should swing the sword',
+                name = {'The man who passes the sentence',
+                        'should swing the sword',
+                },
                 text = {
                     "Each {C:spades}Spade{} held in hand",
                     "gives {X:chips,C:white}X#1#{} Chips",
@@ -110,7 +112,7 @@ return {
             j_rbsg_a_girl_has_no_name = {
                 name = 'A Girl Has No Name',
                 text = {
-                    "On the first hand each round,",
+                    "On the {C:attention}first hand{} each round,",
                     "the rank of the first scored card",
                     "changes to match the rank",
                     "of the last scored card",
@@ -123,6 +125,32 @@ return {
                     "count as {C:attention}King{}",
                     "while this Joker is owned",
                 },
+            },
+            j_rbsg_renly_baratheon = {
+                name = 'Renly Baratheon',
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult",
+                    "{X:mult,C:white}-#2#{} Mult if played hand",
+                    "is a straight or straight flush"
+                },
+            },
+            j_rbsg_flammable_substances = {
+                name = 'Flammable substances',
+                text = {
+                    "When this Joker is {C:attention}destroyed{}",
+                    "add {C:dark_edition}Wildfire{} to {C:attention}1{} random",
+                    "card {C:attention}held in hand{} and",
+                    "destroyed {C:attention}1{} random Joker",
+                }
+            },
+            j_rbsg_stonemason = {
+                name = 'Stonemason',
+                text = {
+                    "Retrigger each played card",
+                    "with no rank 1 additional time",
+                    "{C:inactive}(Stone, ...){}",
+                }
+
             },
 
             j_rbsg_the_generator = {
@@ -218,6 +246,14 @@ return {
                     "Select {C:attention}#1#{} cards",
                     "{C:attention}Gold Cards{} become {C:attention}Lannister Gold{}",
                     "If not Gold become {C:attention}Gold Cards{}",
+                },
+            },
+            c_rbsg_bad_edition = {
+                name = 'Bad Edition',
+                text = {
+                    "Add {C:dark_edition}Bad Apple{} edition",
+                    "to {C:attention}1{} selected card",
+                    "or {C:attention}Joker{}"
                 }
             }
         },
@@ -242,15 +278,26 @@ return {
             e_rbsg_wildfire = {
                 name = 'Wildfire',
                 text = {
-                    "{X:mult,C:white}X#1#{} Mult",
+                    "{X:rbsg_wildfire,C:white}X#1#{} Mult",
+                    "{X:rbsg_wildfire,C:white}X#2#{} Mult if",
+                    "{C:attention}Wild Card"
                 },
             },
             e_rbsg_badapple = {
                 name = 'Bad Apple',
                 text = {
-                    "x1.5 Mult",
+                    "Light suits {C:hearts}Hearts{}, {C:diamonds}Diamonds{}:",
+                    "{X:mult,C:white}X#1#{} Mult",
+                    "Dark suits {C:spades}Spades{}, {C:clubs}Clubs{}:",
+                    "{X:chips,C:white}X#2#{} Chips"
                 },
             },
+            e_rbsg_kaleidoscopic_smoke = {
+                name = "Kaleidoscopic Smoke",
+                text = {
+                    "{X:chips,C:white}X#1#{} Chips"
+                }
+            }
         },
         Other = {
             p_rbsg_wishing_pack = {

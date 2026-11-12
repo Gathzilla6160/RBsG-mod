@@ -19,7 +19,7 @@ SMODS.Shader({
 SMODS.Edition({
     key = "badapple",
     shader = "badapple",
-    config = { ba_xmult = 1.5 },
+    config = { ba_xmult = 1.6, ba_xchips = 1.6 },
     in_shop = true,
     weight = 3,
     extra_cost = 4,
@@ -27,12 +27,30 @@ SMODS.Edition({
     unlocked = true,
     apply_to_float = true,
     loc_vars = function(self, info_queue, card)
-        return { vars = { self.config.ba_xmult } }
+        return { vars = { self.config.ba_xmult, self.config.ba_xchips } }
     end,
     calculate = function(self, card, context)
-        if context.post_joker
-            or (context.main_scoring and context.cardarea == G.play) then
-            return { xmult = self.config.ba_xmult }
+        -- joker: xmult
+        if context.post_joker then
+            return { xmult = self.config.ba_xmult}
         end
-    end,
+
+        if context.main_scoring and context.cardarea == G.play then
+            -- No rank: Xchips
+            if SMODS.has_no_rank(card) then
+                return {xchips = self.config.ba_xchips}
+            end
+            
+            local ret = {}
+            -- Light suits: Xmult
+            if card:is_suit("Hearts") or card:is_suit("Diamonds") then
+                ret.xmult = self.config.ba_xmult
+            end
+            -- Dark suits: Xchips
+            if card:is_suit("Spades") or card:is_suit("Clubs") then
+                ret.xchips = self.config.ba_xchips
+            end
+            if next(ret) then return ret end
+        end
+    end
 })

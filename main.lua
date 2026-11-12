@@ -51,6 +51,12 @@ SMODS.Atlas {
 --#endregion
 
 --#region File Loading
+local loc_colour_ref = loc_colour
+function loc_colour(_c, _default)
+    if not G.ARGS.LOC_COLOURS then loc_colour_ref() end
+    G.ARGS.LOC_COLOURS.rbsg_wildfire = HEX("1FCC2B")
+    return loc_colour_ref(_c, _default)
+end
 
 for _, folder in ipairs({ "enhancements", "jokers", "consumables", "boosters", "editions" }) do
     local src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/" .. folder)

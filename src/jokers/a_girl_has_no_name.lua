@@ -1,9 +1,3 @@
--- Pulls the rank word and suit word out of a card's display name,
--- e.g. "King of Hearts" -> "King", "Hearts"
-local function split_name(name)
-    return name:match('^(.+) of (.+)$')
-end
-
 -- Finds the real card definition matching "<rank> of <suit>"
 local function find_base_by_name(target_name)
     for _, v in pairs(G.P_CARDS) do
@@ -11,7 +5,11 @@ local function find_base_by_name(target_name)
             return v
         end
     end
-end 
+end
+
+local function split_name(name)
+    return name:match('^(.+) of (.+)$')
+end
 
 SMODS.Joker {
     key = 'a_girl_has_no_name',
@@ -30,7 +28,7 @@ SMODS.Joker {
     },
 
     loc_vars = function(self, info_queue, card)
-        return {}
+        return { vars = {} }
     end,
 
     calculate = function(self, card, context)
@@ -40,7 +38,7 @@ SMODS.Joker {
             return
         end
 
-        -- Fires once per round, right as the first scoring card of the first hand is about to be scored
+        -- Fires once per round, on the first scoring card of the first hand
         if context.individual
             and context.cardarea == G.play
             and not context.blueprint
