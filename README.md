@@ -10,7 +10,7 @@ RBsG is a mod adding more content ref from pop culture that I like (ex: Game of 
 * More content coming soon
 
 # Requirements:
-* [Balatro](https://store.steampowered.com/app/2379780/Balatro/)
+* [Balatro](https://store.steampowered.com/app/2379780/Balatro/) (base game)
 * [Steamodded](https://github.com/Steamodded/smods)
 * [Lovely](https://github.com/ethangreen-dev/lovely-injector)
 
