@@ -48,6 +48,12 @@ SMODS.Atlas {
     px = 71,
     py = 95,
 }
+
+SMODS.current_mod.process_loc_text = function()
+    G.localization.misc.labels.rbsg_wildfire = "Wildfire"
+    G.localization.misc.labels.rbsg_badapple = "Bad Apple"
+    G.localization.misc.labels.rbsg_kaleidoscopic_smoke = "Kaleidoscopic Smoke"
+end
 --#endregion
 
 --#region File Loading

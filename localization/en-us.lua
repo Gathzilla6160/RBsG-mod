@@ -309,5 +309,12 @@ return {
                 }
             }
         }
+    },
+    misc = {
+        labels = {
+            rbsg_wildfire = "wildfire",
+            rbsg_badapple = "Bad Apple",
+            rbsg_kaleidoscopic_smoke = "Kaleidoscopic Smoke",
+        }
     }
 }
