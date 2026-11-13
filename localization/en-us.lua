@@ -141,7 +141,17 @@ return {
                     "add {C:dark_edition}Wildfire{} to {C:attention}1{} random",
                     "card {C:attention}held in hand{} and",
                     "destroyed {C:attention}1{} random Joker",
-                }
+                },
+            },
+            j_rbsg_catspaw_dagger = {
+                name = 'Catspaw Dagger',
+                text = {
+                    "When {C:attention}Blind{} is selected,",
+                    "destroy the {C:attention}Joker{} to the left",
+                    "and gain {X:mult,C:white}X#1#{} Mult per {C:money}$1{}",
+                    "its sell value",
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
+                },
             },
             j_rbsg_stonemason = {
                 name = 'Stonemason',
@@ -311,7 +321,7 @@ return {
         }
     },
     misc = {
-        labels = {
+        Labels = {
             rbsg_wildfire = "wildfire",
             rbsg_badapple = "Bad Apple",
             rbsg_kaleidoscopic_smoke = "Kaleidoscopic Smoke",
