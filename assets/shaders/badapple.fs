@@ -16,11 +16,11 @@ extern MY_HIGHP_OR_MEDIUMP vec4 burn_colour_2;
 extern Image bad_sheet;
 extern MY_HIGHP_OR_MEDIUMP float ba_start;
 
-const float COLS    = 82.0;    // sheet is 82 columns x 80 rows
-const float ROWS    = 80.0;
-const float FRAMES  = 6560.0;  // 82 * 80
-const float FPS     = 30.0;    // playback speed
-const float OPACITY = 0.60;    // 1.0 = video only
+const float COLS    = 100.0;
+const float ROWS    = 66.0;
+const float FRAMES  = 6579.0;
+const float FPS     = 30.0;
+const float OPACITY = 0.60;
 
 vec4 dissolve_mask(vec4 tex, vec2 texture_coords, vec2 uv);
 
