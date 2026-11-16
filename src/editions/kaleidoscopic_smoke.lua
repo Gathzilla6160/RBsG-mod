@@ -6,7 +6,7 @@ SMODS.Shader({
 SMODS.Edition({
     key = "kaleidoscopic_smoke",
     shader = "kaleidoscopic_smoke",
-    config = { ks_xchips = 1.5 },
+    config = { ks_xchips = math.log(36) },
     in_shop = true,
     weight = 4,
     extra_cost = 4,
@@ -14,7 +14,7 @@ SMODS.Edition({
     unlocked = true,
     apply_to_float = true,
     loc_vars = function(self, info_queue, card)
-        return { vars = { self.config.ks_xchips } }
+        return { vars = { string.format("%.2f", self.config.ks_xchips ) } }
     end,
     calculate = function(self, card, context)
         if context.post_joker

@@ -1,8 +1,8 @@
 SMODS.Joker {
     key = 'catspaw_dagger',
-    atlas = 'jokers_uncommon',
-    pos = { x = 3, y = 1 }, 
-    rarity = 2,
+    atlas = 'jokers_rare',
+    pos = { x = 6, y = 0 }, 
+    rarity = 3,
     cost = 6,
     blueprint_compat = false,
     perishable_compat = false,

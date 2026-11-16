@@ -30,7 +30,7 @@ return {
                 },
             },
             j_rbsg_two_finger = {
-                name = 'Two Finger ( ͡° ͜ʖ ͡°)',
+                name = 'Two Finger',
                 text = {
                     "Retriggers the first {C:attention}Pair{}",
                     "in the played hand",
@@ -305,7 +305,7 @@ return {
             e_rbsg_kaleidoscopic_smoke = {
                 name = "Kaleidoscopic Smoke",
                 text = {
-                    "{X:chips,C:white}X#1#{} Chips"
+                    "{X:chips,C:white}XLog36{} Chips"
                 }
             }
         },
