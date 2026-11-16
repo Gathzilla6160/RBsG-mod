@@ -187,6 +187,22 @@ return {
                     "into a {C:attention}Coal Card{}",
                 },
             },
+            j_rbsg_cook_house = {
+                name = 'Cook House',
+                text = {
+                    "After {C:attention}Blind{} is defeated",
+                    "create {C:attention}#1# random {C:attention}Food{} Joker",
+                    "{C:attention}(if you have room){}"
+                },
+            },
+            j_rbsg_steelworks = {
+                name = 'Steelworks',
+                text = {
+                    "Once per {C:attention}ante{}, after a hand,",
+                    "turn {attention}1{} randorm score card",
+                    "into a {attention}Steel Card{}",
+                },
+            },
         },
         
         Enhanced = {
