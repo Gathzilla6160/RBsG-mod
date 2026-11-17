@@ -6,28 +6,28 @@ return {
                 text = {
                     '{C:chips}-#1#{} chips',
                     '{C:mult}+#1#{} mult'
-                },
+                }
             },
             j_rbsg_mirror_joker = {
                 name = 'Mirror Joker',
                 text = {
                     "Copies ability of",
-                    "{C:attention}Joker{} to the left",
-                },
+                    "{C:attention}Joker{} to the left"
+                }
             },
             j_rbsg_high_iq_low_eq = {
                 name = 'High IQ, Low EQ',
                 text = {
-                    "{C:mult}+#1#{} Mult", 
-                },
+                    "{C:mult}+#1#{} Mult"
+                }
             },
             j_rbsg_i_am_a_surgeon = {
                 name = 'I am a Surgeon',
                 text = {
                     "If played hand is {C:attention}2{} cards,",
                     "move the {C:attention}left card's{} edition ",
-                    "to the {C:attention}right card{}",
-                },
+                    "to the {C:attention}right card{}"
+                }
             },
             j_rbsg_two_finger = {
                 name = 'Two Finger',
@@ -35,7 +35,7 @@ return {
                     "Retriggers the first {C:attention}Pair{}",
                     "in the played hand",
                     "{C:attention}#1#{} additional time"
-                },
+                }
             },
 
             j_rbsg_kingslayer = {
@@ -45,17 +45,17 @@ return {
                     "in played hand",
                     "Gains {X:mult,C:white}X#1#{} Mult per",
                     "{C:attention}King{} destroyed",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
-                },
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
+                }
             },
             j_rbsg_the_man = {
                 name = {'The man who passes the sentence',
-                        'should swing the sword',
+                        'should swing the sword'
                 },
                 text = {
                     "Each {C:spades}Spade{} held in hand",
-                    "gives {X:chips,C:white}X#1#{} Chips",
-                },
+                    "gives {X:chips,C:white}X#1#{} Chips"
+                }
             },
             j_rbsg_direwolf_mother = {
                 name = 'Direwolf Mother',
@@ -65,15 +65,15 @@ return {
                     "and create {C:attention}5 Wolf Cubs{} and {C:attention}1 White One{}",
                     "with this card's {C:dark_edition}edition{}",
                     "{C:inactive}(#3#/#4#)"
-                },
+                }
             },
             j_rbsg_wolf_cub = {
                 name = 'Wolf Cub',
                 text = {
                     "{C:mult}+#1#{} Mult",
                     "Grows into a {C:attention}Direwolf{}",
-                    "after {C:attention}#3#{} rounds {C:inactive}(#2#/#3#)",
-                },
+                    "after {C:attention}#3#{} rounds {C:inactive}(#2#/#3#)"
+                }
             },
             j_rbsg_white_one = {
                 name= 'White One',
@@ -81,7 +81,7 @@ return {
                     "{C:mult}+#1#{} Mult",
                     "Grows into {C:attention}Direwolf{}",
                     "after {C:attention}#3#{} rounds {C:inactive}(#2#/#3#)",
-                },
+                }
             },
             j_rbsg_grey_wind = { name = "Grey Wind", text = { "{X:mult,C:white}X#1#{} Mult" } },
             j_rbsg_lady      = { name = "Lady",      text = { "{X:mult,C:white}X#1#{} Mult" } },
@@ -97,8 +97,8 @@ return {
                     "turn first card drawn",
                     "into {C:attention}Frostbite{}",
                     "{C:mult}+#1#{} Mult and {C:chips}+#2#{} Chips",
-                    "per card turned {C:inactive}(Currently +#3#{C:inactive})",
-                },
+                    "per card turned {C:inactive}(Currently +#3#{C:inactive})"
+                }
             },
             j_rbsg_wights_joker = {
                 name = 'Wights Joker',
@@ -106,8 +106,8 @@ return {
                     "When bought, enhance",
                     "{C:attention}#1#{} random cards",
                     "in deck into {C:attention}Frostbite{}",
-                    "{C:mult}+#2#{} Mult",
-                },
+                    "{C:mult}+#2#{} Mult"
+                }
             },
             j_rbsg_a_girl_has_no_name = {
                 name = 'A Girl Has No Name',
@@ -115,16 +115,16 @@ return {
                     "On the {C:attention}first hand{} each round,",
                     "the rank of the first scored card",
                     "changes to match the rank",
-                    "of the last scored card",
-                },
+                    "of the last scored card"
+                }
             },
             j_rbsg_battle_of_the_bastards = {
                 name = 'Battle of the Bastards',
                 text = {
                     "{C:attention}#2#{} and {C:attention}#3#{}",
                     "count as {C:attention}King{}",
-                    "while this Joker is owned",
-                },
+                    "while this Joker is owned"
+                }
             },
             j_rbsg_renly_baratheon = {
                 name = 'Renly Baratheon',
@@ -132,7 +132,7 @@ return {
                     "{X:mult,C:white}X#1#{} Mult",
                     "{X:mult,C:white}-#2#{} Mult if played hand",
                     "is a straight or straight flush"
-                },
+                }
             },
             j_rbsg_flammable_substances = {
                 name = 'Flammable substances',
@@ -140,8 +140,8 @@ return {
                     "When this Joker is {C:attention}destroyed{}",
                     "add {C:dark_edition}Wildfire{} to {C:attention}1{} random",
                     "card {C:attention}held in hand{} and",
-                    "destroyed {C:attention}1{} random Joker",
-                },
+                    "destroyed {C:attention}1{} random Joker"
+                }
             },
             j_rbsg_catspaw_dagger = {
                 name = 'Catspaw Dagger',
@@ -150,15 +150,15 @@ return {
                     "destroy the {C:attention}Joker{} to the left",
                     "and gain {X:mult,C:white}X#1#{} Mult per {C:money}$1{}",
                     "its sell value",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
-                },
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
+                }
             },
             j_rbsg_stonemason = {
                 name = 'Stonemason',
                 text = {
                     "Retrigger each played card",
                     "with no rank 1 additional time",
-                    "{C:inactive}(Stone, ...){}",
+                    "{C:inactive}(Stone, ...){}"
                 }
 
             },
@@ -168,24 +168,24 @@ return {
                 text = {
                     "Gains {X:mult,C:white}X#1#{} Mult when",
                     "score catches {C:attention}on fire{}",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)",
-                },
+                    "{C:inactive}(Currently {X:mult,C:white}X#2#{C:inactive} Mult)"
+                }
             },
             j_rbsg_sawdust_meal = {
                 name =  'Sawdust Meal',
                 text = {
                     "{X:mult,C:white}X#1#{} Mult",
                     "{C:green}#3# in #4#{} chance for",
-                    "{C:red}-#2# Mult",
-                },
+                    "{C:red}-#2# Mult"
+                }
             },
             j_rbsg_coal_mine = {
                 name = 'Coal Mine',
                 text = {
                     "Once per {C:attention}ante{}, after handplay,",
                     "turn {C:attention}1{} random unscored card",
-                    "into a {C:attention}Coal Card{}",
-                },
+                    "into a {C:attention}Coal Card{}"
+                }
             },
             j_rbsg_cook_house = {
                 name = 'Cook House',
@@ -193,15 +193,15 @@ return {
                     "After {C:attention}Blind{} is defeated",
                     "create {C:attention}#1# random {C:attention}Food{} Joker",
                     "{C:attention}(if you have room){}"
-                },
+                }
             },
             j_rbsg_steelworks = {
                 name = 'Steelworks',
                 text = {
                     "Once per {C:attention}ante{}, after a hand,",
                     "turn {attention}1{} randorm score card",
-                    "into a {attention}Steel Card{}",
-                },
+                    "into a {attention}Steel Card{}"
+                }
             },
         },
         
@@ -211,15 +211,15 @@ return {
                 text = {
                     "{X:mult,C:white}X#1#{} Mult",
                     "while this card",
-                    "stays in hand",
-                },
+                    "stays in hand"
+                }
             },
             m_rbsg_lannister_gold = {
                 name = 'Lannister Gold',
                 text = {
                     "{C:money}$#1#{} when played",
                     "{C:money}$#2#{} if this card is held",
-                    "in hand at end of round",
+                    "in hand at end of round"
                 }
             },
             m_rbsg_frostbite = {
@@ -227,7 +227,7 @@ return {
                 text = {
                     "{X:chips,C:white}X#1#{} Chips",
                     "while this card",
-                    "stays in hand",
+                    "stays in hand"
                 }
             },
             m_rbsg_coal = {
@@ -237,14 +237,14 @@ return {
                     "Always scores",
                     "If you own {C:attention}The Generator{},",
                     "destroyed when played and gives",
-                    "{X:mult,C:white}X#2#{} Mult to The Generator",
+                    "{X:mult,C:white}X#2#{} Mult to The Generator"
                 }
             },
             m_rbsg_ash = {
                 name = 'Ash',
                 text = {
                     "{C:green}#1# in #2#{} chance to be",
-                    "destroyed when held, played or discarded",
+                    "destroyed when held, played or discarded"
                 }
             },
             m_rbsg_wood = {
@@ -252,7 +252,7 @@ return {
                 text = {
                     "Cannot be debuffed",
                     "{C:green}#1# in #2#{} chance to turn into",
-                    "{C:attention}Ash{} when score catches on fire",
+                    "{C:attention}Ash{} when score catches on fire"
                 }
             },
 
@@ -263,16 +263,16 @@ return {
                 text = {
                     "Select {C:attention}#1#{} cards",
                     "{C:attention}Steel Cards{} become {C:attention}Valyrian Steel{}",
-                    "If not Steel become {C:attention}Steel Cards{}",
-                },
+                    "If not Steel become {C:attention}Steel Cards{}"
+                }
             },
             c_rbsg_the_lannister_mines = {
                 name = 'The Lannister Mines',
                 text = {
                     "Select {C:attention}#1#{} cards",
                     "{C:attention}Gold Cards{} become {C:attention}Lannister Gold{}",
-                    "If not Gold become {C:attention}Gold Cards{}",
-                },
+                    "If not Gold become {C:attention}Gold Cards{}"
+                }
             },
             c_rbsg_bad_edition = {
                 name = 'Bad Edition',
@@ -289,15 +289,15 @@ return {
                 text = {
                     "Enhances up to {C:attention}#1#{}",
                     "selected cards to",
-                    "{C:attention}Wood{}",
-                },
+                    "{C:attention}Wood{}"
+                }
             },
             c_rbsg_the_flame = {
                 name = 'The Flame',
                 text = {
                     "Select cards to up to {C:attention}#1#{} cards",
-                    "burn them into {C:attention}Ash{}",
-                },
+                    "burn them into {C:attention}Ash{}"
+                }
             },
         },
         Edition ={
@@ -307,7 +307,7 @@ return {
                     "{X:rbsg_wildfire,C:white}X#1#{} Mult",
                     "{X:rbsg_wildfire,C:white}X#2#{} Mult if",
                     "{C:attention}Wild Card"
-                },
+                }
             },
             e_rbsg_badapple = {
                 name = 'Bad Apple',
@@ -316,7 +316,7 @@ return {
                     "{X:mult,C:white}X#1#{} Mult",
                     "Dark suits {C:spades}Spades{}, {C:clubs}Clubs{}:",
                     "{X:chips,C:white}X#2#{} Chips"
-                },
+                }
             },
             e_rbsg_kaleidoscopic_smoke = {
                 name = "Kaleidoscopic Smoke",
@@ -332,6 +332,16 @@ return {
                     "Choose {C:attention}#1#{} of {C:attention}#2#{} Jokers",
                     "9 random {C:attention}Common{}, 1 {C:attention}Rare{}",
                     "Your 9th pack contains a ???"
+                }
+            }
+        },
+        Back = {
+            b_rbsg_a_new_home = {
+                name = 'A New Home',
+                text = {
+                    "Start run with",
+                    "{C:dark_edition}Negative{} Generator and",
+                    "6 {C:attention}Resources{} enhancement"
                 }
             }
         }

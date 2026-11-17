@@ -49,6 +49,13 @@ SMODS.Atlas {
     py = 95,
 }
 
+SMODS.Atlas {
+    key = 'decks',
+    path = 'decks.png',
+    px = 71,
+    py = 95,
+}
+
 SMODS.current_mod.process_loc_text = function()
     G.localization.misc.labels.rbsg_wildfire = "Wildfire"
     G.localization.misc.labels.rbsg_badapple = "Bad Apple"
@@ -64,7 +71,7 @@ function loc_colour(_c, _default)
     return loc_colour_ref(_c, _default)
 end
 
-for _, folder in ipairs({ "enhancements", "jokers", "consumables", "boosters", "editions" }) do
+for _, folder in ipairs({ "enhancements", "jokers", "consumables", "boosters", "editions", "decks" }) do
     local src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src/" .. folder)
     for _, file in ipairs(src) do
         if file:match("%.lua$") then
