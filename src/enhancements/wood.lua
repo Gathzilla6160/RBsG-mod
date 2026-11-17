@@ -14,7 +14,7 @@ SMODS.Enhancement {
     pos = { x = 3, y = 0 },
     config = {
         extra = {
-            odds = 4,
+            odds = 5,
         },
     },
     

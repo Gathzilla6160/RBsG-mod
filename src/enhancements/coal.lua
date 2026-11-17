@@ -1,3 +1,12 @@
+local function is_played(card, context)
+    for _, c in ipairs(context.full_hand or {}) do
+        if c == card then
+            return true
+        end
+    end
+    return false
+end
+
 local function find_generator()
     for _, j in ipairs(G.jokers and G.jokers.cards or {}) do
         if j.config and j.config.center and j.config.center.key == 'j_rbsg_the_generator' then
@@ -27,13 +36,13 @@ SMODS.Enhancement {
         return {
             vars = {
                 ability.mult,
-                ability.generator_xmult,
+                self.config.generator_xmult,
             },
         }
     end,
 
-    calculate = function (self, card, context)
-        if context.destroy_card and context.destroy_card == card then
+    calculate = function(self, card, context)
+        if context.destroy_card and context.destroy_card == card and is_played(card, context) then
             local generator = find_generator()
             if generator then
                 generator.ability.extra.xmult = generator.ability.extra.xmult + self.config.generator_xmult

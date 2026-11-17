@@ -77,7 +77,7 @@ SMODS.Joker {
     blueprint_compat = true,
     in_pool = never_in_pool,
     config = {
-        extra = { mult = 10, rounds = 0, max_rounds = 3, index = 1 },
+        extra = { mult = 10, rounds = 0, max_rounds = 4, index = 1 },
     },
     loc_vars = young_loc_vars,
     calculate = young_calculate(function(card)
