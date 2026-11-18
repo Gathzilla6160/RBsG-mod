@@ -26,11 +26,11 @@ if Card and Card.update then
 end
 
 SMODS.Joker {
-    key = 'high_iq_low_eq',
+    key = 'bazinga',
     atlas = 'jokers_common',
     pos = { x = 4, y = 0 },
     rarity = 1,
-    cost = 1,
+    cost = 3,
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
@@ -51,7 +51,6 @@ SMODS.Joker {
 
     calculate = function(self, card, context)
         if context.joker_main then
-            -- Start the word popups; the +187 Mult is returned right away
             card.rbsg_words_idx = 0
             card.rbsg_words_timer = 0
             return {

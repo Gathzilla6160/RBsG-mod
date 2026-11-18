@@ -15,8 +15,8 @@ return {
                     "{C:attention}Joker{} to the left"
                 }
             },
-            j_rbsg_high_iq_low_eq = {
-                name = 'High IQ, Low EQ',
+            j_rbsg_bazinga = {
+                name = 'Bazinga!',
                 text = {
                     "{C:mult}+#1#{} Mult"
                 }
@@ -216,7 +216,7 @@ return {
                 text = {
                     "After {C:attention}#1#{} rounds, sell this",
                     "to transform {C:attention}3{} random cards",
-                    "in your deck in to {C:attention}Steel{},",
+                    "in your hand in to {C:attention}Steel{},",
                     "{C:attention}Wood{} and {C:attention}Coal{}",
                     "{C:inactive}(#2#/#1#){}"
                 }

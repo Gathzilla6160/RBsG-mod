@@ -7,7 +7,7 @@ SMODS.Joker {
     blueprint_compat = false,
     eternal_compat = false,
     perishable_compat = true,
-
+            
     config = {
         extra = {
             rounds = 2,
@@ -50,7 +50,7 @@ SMODS.Joker {
             card.ability.extra.used = true
 
             local pool = {}
-            for _, c in ipairs(G.playing_cards or {}) do
+            for _, c in ipairs(G.hand and G.hand.cards or {}) do
                 pool[#pool + 1] = c
             end
             local picks = {}
