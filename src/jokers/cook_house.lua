@@ -6,11 +6,11 @@ local FOOD_JOKERS = {
     'j_popcorn',
     'j_ramen',
     'j_turtle_bean',
-    'j_seltzer',
-    
+    'j_rbsg_sawdust_meal',
     'j_rbsg_sawdust_meal',
     'j_rbsg_soup',
-    'j_rbsg_hearty_meals'
+    'j_rbsg_soup',
+    'j_rbsg_soup'
 }
 
 SMODS.Joker {
@@ -19,7 +19,7 @@ SMODS.Joker {
     pos = { x = 3, y = 1 },
     rarity = 2,
     cost = 6,
-    blueprint_compat = false,
+    blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
 

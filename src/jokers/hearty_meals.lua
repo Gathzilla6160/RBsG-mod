@@ -14,6 +14,7 @@ SMODS.Joker {
             chips = 50,
             xmult = 2,
             xmult_loss = 0.25,
+            destroyed = false,
         },
     },
 
@@ -39,16 +40,23 @@ SMODS.Joker {
             }
         end
 
+        local blind = G.GAME.blind
+        local is_boss = blind and (blind.boss or (blind.config and blind.config.boss))
         if context.end_of_round and context.game_over == false and context.main_eval
-            and not context.blueprint and G.GAME.blind and G.GAME.blind.boss then
+            and not context.blueprint and is_boss and not card.ability.extra.destroyed then
+
             card.ability.extra.xmult = card.ability.extra.xmult - card.ability.extra.xmult_loss
-            if card.ability.extra.xmult <= 1 then
+
+            if card.ability.extra.xmult < 1 then
+                card.ability.extra.destroyed = true
+                G.jokers:remove_card(card)
+                card:remove()
                 return {
                     message = localize('k_eaten_ex'),
                     colour = G.C.RED,
-                    remove = true,
                 }
             end
+
             return {
                 message = 'X' .. card.ability.extra.xmult,
                 colour = G.C.MULT,

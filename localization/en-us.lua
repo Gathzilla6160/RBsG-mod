@@ -63,7 +63,7 @@ return {
                     "{C:mult}+#1#{} Mult and {C:chips}+#2#{} Chips",
                     "After {C:attention}#4#{} rounds, destroy this card",
                     "and create {C:attention}5 Wolf Cubs{} and {C:attention}1 White One{}",
-                    "with this card's {C:dark_edition}edition{}",
+                    "keep this card's {C:dark_edition}edition{}",
                     "{C:inactive}(#3#/#4#)"
                 }
             },
@@ -131,7 +131,7 @@ return {
                 text = {
                     "{X:mult,C:white}X#1#{} Mult",
                     "{X:mult,C:white}-#2#{} Mult if played hand",
-                    "is a straight or straight flush"
+                    "contain a straight"
                 }
             },
             j_rbsg_flammable_substances = {
@@ -208,7 +208,7 @@ return {
                 text = {
                     "After winning {C:attention}#1#{} Blinds",
                     "create {c:attention}The Tree{} tarrot cards",
-                    "{C:inactive} (#2#, #1#)"
+                    "{C:inactive} (#2#/#1#)"
                 }
             },
             j_rbsg_gathering_post = {
