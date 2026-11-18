@@ -7,6 +7,7 @@ RBsG is a mod adding more content ref from pop culture that I like (ex: Game of 
 * Custom Consumables
 * Custom Booster Pack
 * Custom Editions
+* Custom Decks
 * More content coming soon
 
 # Requirements:
