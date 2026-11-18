@@ -203,8 +203,48 @@ return {
                     "into a {attention}Steel Card{}"
                 }
             },
+            j_rbsg_sawmill = {
+                name = 'Sawmill',
+                text = {
+                    "After winning {C:attention}#1#{} Blinds",
+                    "create {c:attention}The Tree{} tarrot cards",
+                    "{C:inactive} (#2#, #1#)"
+                }
+            },
+            j_rbsg_gathering_post = {
+                name = 'Gathering Post',
+                text = {
+                    "After {C:attention}#1#{} rounds, sell this",
+                    "to transform {C:attention}3{} random cards",
+                    "in your deck in to {C:attention}Steel{},",
+                    "{C:attention}Wood{} and {C:attention}Coal{}",
+                    "{C:inactive}(#2#/#1#){}"
+                }
+            },
+            j_rbsg_charcoal_kiln = {
+                name = 'Charcoal Kiln',
+                text = {
+                    "All played {C:attention}Wood{} cards",
+                    "become {C:attention}Coal{} cards when scored",
+                }
+            },
+            j_rbsg_soup = {
+                name = 'Soup',
+                text = {
+                    "{C:mult}+#1#{} Mult",
+                    "{C:chips}+#2#{} Chips"
+                }
+            },
+            j_rbsg_hearty_meals = {
+                name = 'Hearty Meals',
+                text = {
+                    "{C:mult}+#1#{} Mult, {C:chips}+#2#{} Chips",
+                    "{X:mult,C:white}X#3#{} Mult",
+                    "Loses {X:mult,C:white}X#4#{} Mult when a",
+                    "{C:attention}Boss Blind{} is defeated"
+                }
+            },
         },
-        
         Enhanced = {
             m_rbsg_valyrian_steel = {
                 name = 'Valyrian Steel',
@@ -300,9 +340,9 @@ return {
                 }
             },
         },
-        Edition ={
+        Edition = {
             e_rbsg_wildfire = {
-                name = 'Wildfire',
+                name = "Wildfire",
                 text = {
                     "{X:rbsg_wildfire,C:white}X#1#{} Mult",
                     "{X:rbsg_wildfire,C:white}X#2#{} Mult if",
@@ -310,7 +350,7 @@ return {
                 }
             },
             e_rbsg_badapple = {
-                name = 'Bad Apple',
+                name = "Bad Apple",
                 text = {
                     "Light suits {C:hearts}Hearts{}, {C:diamonds}Diamonds{}:",
                     "{X:mult,C:white}X#1#{} Mult",

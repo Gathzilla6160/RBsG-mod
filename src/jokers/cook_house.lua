@@ -7,7 +7,10 @@ local FOOD_JOKERS = {
     'j_ramen',
     'j_turtle_bean',
     'j_seltzer',
-    'j_rbsg_sawdust_meal'
+    
+    'j_rbsg_sawdust_meal',
+    'j_rbsg_soup',
+    'j_rbsg_hearty_meals'
 }
 
 SMODS.Joker {
