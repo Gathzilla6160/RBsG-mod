@@ -6,7 +6,7 @@ SMODS.Shader({
 SMODS.Edition({
     key = "kaleidoscopic_smoke",
     shader = "kaleidoscopic_smoke",
-    config = { ks_xchips = math.log(36) },
+    config = { ks_xchips = math.log(36) / math.log(10)  },
     in_shop = true,
     weight = 4,
     extra_cost = 4,
