@@ -63,6 +63,43 @@ SMODS.current_mod.process_loc_text = function()
 end
 --#endregion
 
+-- Make sure owned mod jokers get flagged as "used"
+local add_ref = Card.add_to_deck
+function Card:add_to_deck(from_debuff)
+    add_ref(self, from_debuff)
+    if self.ability and self.ability.set == 'Joker' and self.config.center.mod then
+        G.GAME.used_jokers[self.config.center.key] = true
+    end
+end
+
+local remove_ref = Card.remove_from_deck
+function Card:remove_from_deck(from_debuff)
+    remove_ref(self, from_debuff)
+    if self.ability and self.ability.set == 'Joker' and self.config.center.mod then
+        -- only clear the flag if no other copy is still owned
+        local count = 0 
+        for _, j in ipairs(G.jokers and G.jokers.cards or {}) do
+            if j ~= self and j.config.center.key == self.config.center.key then count = count + 1 end
+        end
+        if count == 0 then G.GAME.used_jokers[self.config.center.key] = nil end
+    end
+end
+
+-- Filter owned jokers out of the pool
+local pool_ref = get_current_pool
+function get_current_pool(_type, _rarity, _legendary, _append)
+    local pool, pool_key = pool_ref(_type, _rarity, _legendary, _append)
+    if _type == 'Joker' and not next(SMODS.find_card('j_ring_master')) then
+        for i, key in ipairs(pool) do
+            if key ~= 'UNAVAILABLE' and next(SMODS.find_card(key)) then
+                pool[i] = 'UNAVAILABLE'
+            end
+        end
+    end
+    return pool, pool_key
+end
+
+
 --#region File Loading
 local loc_colour_ref = loc_colour
 function loc_colour(_c, _default)

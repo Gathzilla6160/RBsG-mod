@@ -200,14 +200,14 @@ return {
                 text = {
                     "Once per {C:attention}ante{}, after a hand,",
                     "turn {attention}1{} randorm score card",
-                    "into a {attention}Steel Card{}"
+                    "into a {C:attention}Steel Card{}"
                 }
             },
             j_rbsg_sawmill = {
                 name = 'Sawmill',
                 text = {
                     "After winning {C:attention}#1#{} Blinds",
-                    "create {c:attention}The Tree{} tarrot cards",
+                    "create {C:attention}The Tree{} tarrot cards",
                     "{C:inactive} (#2#/#1#)"
                 }
             },
@@ -388,7 +388,7 @@ return {
     },
     misc = {
         Labels = {
-            rbsg_wildfire = "wildfire",
+            rbsg_wildfire = "Wildfire",
             rbsg_badapple = "Bad Apple",
             rbsg_kaleidoscopic_smoke = "Kaleidoscopic Smoke",
         }
